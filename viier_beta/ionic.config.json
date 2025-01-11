@@ -1,0 +1,7 @@
+{
+  "name": "Vier-Beta",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite"
+}

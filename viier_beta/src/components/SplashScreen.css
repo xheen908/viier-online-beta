@@ -1,0 +1,23 @@
+.splash-screen {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(120deg, #4facfe, #006efe);
+  }
+  
+  .splash-logo {
+    width: 250px; /* Größe des Logos */
+    margin-bottom: 20px;
+  }
+  .footer-text {
+    width: 100%;
+    text-align: center; /* Center footer text horizontally */
+    position: absolute;
+    bottom: 0; /* Position at the bottom of the splash screen */
+    padding: 10px 0; /* Padding for spacing */
+    font-size: 16px; /* Font size can be adjusted as needed */
+    color: #ffffff; /* Adjust color based on your design */
+  }

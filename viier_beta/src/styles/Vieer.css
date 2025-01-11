@@ -1,0 +1,84 @@
+html, body, #root, .ion-page {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#vier-pwnd #game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(120deg, #4facfe, #006efe);
+  color: white;
+  width: 100%; /* Passt sich der Bildschirmbreite an */
+  height: calc(100vh - 135px); /* Voller Bildschirm minus Header/Footer */
+  padding: 20px;
+  box-sizing: border-box;
+  margin: 0;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#vier-pwnd #game-container img {
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  max-width: 150px; /* Logo-Größe */
+  height: auto;
+}
+
+#vier-pwnd #game-container h2 {
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+#vier-pwnd #game-board {
+  display: grid;
+  grid-template-columns: repeat(7, 40px); /* 7 Spalten */
+  grid-template-rows: repeat(6, 40px); /* 6 Zeilen */
+  gap: 3px; /* Abstand zwischen den Zellen */
+  justify-content: center;
+  margin: 10px auto;
+  padding: 5px;
+  background-color: #0077be;
+  border-radius: 10px;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#vier-pwnd .cell {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  background-color: #ffffff !important; /* Priorität erzwingen */
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+
+
+#vier-pwnd .cell:hover {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+#vier-pwnd .cell.player1 {
+  background: radial-gradient(circle, #ff5e57, #ff1f1f); /* Rot */
+  color: white;
+}
+
+#vier-pwnd .cell.player2 {
+  background: radial-gradient(circle, #ffe256, #faca15); /* Gelb */
+  color: white;
+}
+
+ion-button {
+  margin-top: 20px;
+  box-shadow: none;
+  font-size: 1.1em;
+}
+ion-footer {
+  background-color: #006efe !important;
+  color: white !important;
+}
+

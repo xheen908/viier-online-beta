@@ -1,0 +1,7 @@
+.gradient-toolbar {
+    background: linear-gradient(120deg, #4facfe, #006efe) !important;
+  }
+
+  ion-toolbar::part(native) {
+    background: linear-gradient(120deg, #4facfe, #006efe);
+  }
